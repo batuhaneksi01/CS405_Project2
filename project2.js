@@ -112,9 +112,6 @@ class MeshDrawer {
 
 		///////////////////////////////
 
-		gl.bindBuffer(gl.ARRAY_BUFFER, this.normalbuffer);
-		gl.enableVertexAttribArray(this.lightPosLoc);
-		gl.vertexAttribPointer(this.lightPosLoc, 3, gl.FLOAT, false, 0, 0);
 
 		updateLightPos();
 		gl.drawArrays(gl.TRIANGLES, 0, this.numTriangles);
